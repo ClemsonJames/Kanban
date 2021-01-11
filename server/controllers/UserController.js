@@ -21,11 +21,13 @@ UserController.createUser = async function(email, password, callback) {
         });
     }
 
+    /** email check   none right now 
     if (!email.endsWith(".edu")) {
         return callback({
             message: "Use your educational email"
         });
     }
+    */
 
     if (!password || password.length < 6) {
         return callback({
