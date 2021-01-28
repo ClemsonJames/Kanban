@@ -71,7 +71,7 @@
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Major</th>
+                        <th class="six wide">Major</th>
                         <th>Sex</th>
                         <th>Ethnicity</th>
                         <th>Status</th>
@@ -82,7 +82,7 @@
                     <tr ng-click="selectUser(user)" ng-repeat="user in users">
                         <td class="collapsing">{{user.info.name}}</td>
                         <td class="collapsing">{{user.email}}</td>
-                        <td class="collapsing">{{user.info.major}}</td>
+                        <td>{{user.info.major}}</td>
                         <td class="collapsing">{{user.info.sex}}</td>
                         <td class="collapsing">{{user.info.race}}</td>
                         <td class="collapsing">{{getStatus(user.status)}}</td>
